@@ -12,21 +12,26 @@ namespace BaiTap6
         {
 
             Console.Write("Nhap vao ngay ban muon: Ngay = ");
+            string ngay = Console.ReadLine();
 
-            int ngay = Int32.Parse(Console.ReadLine());
             Console.Write("Nhap vao thang ban muon: Thang = ");
-            int thang = Int32.Parse(Console.ReadLine());
+            string thang = Console.ReadLine();
             
             Console.Write("Nhap vao nam ban muon: Nam = ");
-            int nam = Int32.Parse(Console.ReadLine());
+            string nam =Console.ReadLine();
 
-           
-            DateTime date = new DateTime(nam,thang,ngay);
-            Console.WriteLine(date.DayOfWeek);
+            DateTime date = DateTime.Parse(thang + "/" + ngay + "/" + nam);
+                      
+         
+
+
+            Console.WriteLine("Ngay hom qua la: \t{0}",date.AddDays(-1).ToString("dd/mm/yyyy"));
+            Console.WriteLine("Ngay hom nay la: \t{0}", date.ToString("dd/mm/yyyy"));
+            Console.WriteLine("Ngay hom sau la: \t{0}", date.AddDays(1).ToString("dd/mm/yyyy"));
 
             Console.WriteLine("<..........................................................>");
 
-           
+           Console.ReadKey();
 
 
 
