@@ -38,9 +38,9 @@ namespace BaiTap6
             Console.Write("Nhap vao ngay ban muon: Ngay = ");
             DateTime date = DateTime.Parse(Console.ReadLine());
 
-            Console.WriteLine("Ngay hom qua la: \t{0}", date.AddDays(-1));
+            Console.WriteLine("Ngay hom qua la: \t{0}", date.AddDays(-15));
             Console.WriteLine("Ngay hom nay la: \t{0}", date);
-            Console.WriteLine("Ngay hom sau la: \t{0}", date.AddDays(1));
+            Console.WriteLine("Ngay hom sau la: \t{0}", date.AddDays(15));
 
             Console.WriteLine("<..........................................................>");
 

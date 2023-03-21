@@ -12,7 +12,8 @@ namespace BaiTap5
         public string hoTen { get; set; }
         public string gioiTinh  { get; set;}        
         
-        public DateTime ngaySinh { get;set; }   
+        public DateTime ngaySinh { get;set; }  
+        
         public double heSoluong { get; set; }
 
         public double luongCoban { get; set; }
@@ -61,26 +62,26 @@ namespace BaiTap5
             //Xuất thông tin nhân viên 1 ra màn hình
             Console.WriteLine("Nhan vien 1:\n\n{0}\tGioi tinh:{1}\tNgay sinh:{2}\tHe so luong:{3}\tLuong co ban:{4}\tSo " +
                 "nam lam viec:{5}\tPhu cap nhan vien:{6}\tTam tinh:{7}\tLuong:{8}", 
-                nhanvien1.hoTen,nhanvien1.gioiTinh,nhanvien1.ngaySinh,nhanvien1.heSoluong,
+                nhanvien1.hoTen,nhanvien1.gioiTinh,nhanvien1.ngaySinh.ToString("dd/mm/yyyy"),nhanvien1.heSoluong,
                 nhanvien1.luongCoban,nhanvien1.soNamlamviec,nhanvien1.phuCapNhanvien,nhanvien1.tamTinh,nhanvien1.luong);
 
             //Xuất thông tin nhân viên 2 ra màn hình
 
             Console.WriteLine("\n\nNhan vien 2:\n\n{0}\tGioi tinh:{1}\tNgay sinh:{2}\tHe so luong:{3}\tLuong co ban:{4}\tSo " +
                             "nam lam viec:{5}\tPhu cap nhan vien:{6}\tTam tinh:{7}\tLuong:{8}",
-                            nhanvien2.hoTen, nhanvien2.gioiTinh, nhanvien2.ngaySinh, nhanvien2.heSoluong,
+                            nhanvien2.hoTen, nhanvien2.gioiTinh, nhanvien2.ngaySinh.ToString("dd/mm/yyyy"), nhanvien2.heSoluong,
                             nhanvien2.luongCoban, nhanvien2.soNamlamviec, nhanvien2.phuCapNhanvien, nhanvien2.tamTinh, nhanvien2.luong);
 
             //Xuất thông tin nhân viên 3 ra màn hình
             Console.WriteLine("\n\nNhan vien 3:\n\n{0}\tGioi tinh:{1}\tNgay sinh:{2}\tHe so luong:{3}\tLuong co ban:{4}\tSo " +
                   "nam lam viec:{5}\tPhu cap nhan vien:{6}\tTam tinh:{7}\tLuong:{8}",
-                  nhanvien3.hoTen, nhanvien3.gioiTinh, nhanvien3.ngaySinh, nhanvien3.heSoluong,
+                  nhanvien3.hoTen, nhanvien3.gioiTinh, nhanvien3.ngaySinh.ToString("dd/mm/yyyy"), nhanvien3.heSoluong,
                   nhanvien3.luongCoban, nhanvien3.soNamlamviec, nhanvien3.phuCapNhanvien, nhanvien3.tamTinh, nhanvien3.luong);
 
             //Xuất thông tin nhân viên 4 ra màn hình
             Console.WriteLine("\n\nNhan vien 4:\n\n{0}\tGioi tinh:{1}\tNgay sinh:{2}\tHe so luong:{3}\tLuong co ban:{4}\tSo " +
                 "nam lam viec:{5}\tPhu cap nhan vien:{6}\tTam tinh:{7}\tLuong:{8}",
-                nhanvien4.hoTen, nhanvien4.gioiTinh, nhanvien4.ngaySinh, nhanvien4.heSoluong,
+                nhanvien4.hoTen, nhanvien4.gioiTinh, nhanvien4.ngaySinh.ToString("dd/mm/yyyy"), nhanvien4.heSoluong,
                 nhanvien4.luongCoban, nhanvien4.soNamlamviec, nhanvien4.phuCapNhanvien, nhanvien4.tamTinh, nhanvien4.luong);
 
                       
